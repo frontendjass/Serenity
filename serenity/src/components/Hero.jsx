@@ -1,4 +1,4 @@
-import imageUrl from '../assets/2.jpg';
+import imageUrl from '../assets/Heroo.jpg';
 
 export default function Hero() {
     const heroStyle = {
