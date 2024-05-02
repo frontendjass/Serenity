@@ -2,7 +2,7 @@ import imageUrl from '../assets/About.jpg';
 
 export default function About() {
   return (
-    <section className='bg-matcha-50 p-4 w-screen'>
+    <section className='bg-matcha-100 p-4 w-screen'>
       <div className='sm:flex'>
         <img src={imageUrl} alt="About us image" className='object-cover sm:w-1/2'/>
         <div className='p-4 flex flex-col justify-center items-center'>
