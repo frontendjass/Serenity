@@ -1,36 +1,27 @@
 import { useState } from 'react';
 
-import menuActiveIcon from '../assets/icon-hamburger.svg';
+import menuActiveIcon from '../assets/hamburger-menu.svg';
+import menuCloseIcon from '../assets/hamburger-close.svg';
 
 export default function Navbar() {
-  const [menuActive, setMenuActive] = useState('-translate-y-32');
+  const [menuActive, setMenuActive] = useState(false);
 
   function handleClick() {
-    setMenuActive(
-      menuActive === '-translate-y-32' ? 'translate-y-7' : '-translate-y-32'
-    );
+    setMenuActive(prev => !prev);
   }
 
   const rainbowText = "text-4xl font-bold bg-gradient-to-r from-matcha-400 via-matcha-200 to-matcha-400 bg-clip-text text-transparent";
-  const buttonStyle = 'text-matcha-50';
+  const buttonStyle = 'text-matcha-900 text-xl';
 
   return (
-    <nav className='flex justify-between items-center w-full h-14 absolute top-0 left-0 px-4'>
-      <span className={`${rainbowText} sm:text-5xl`}>SRTY</span>
-      <ul
-        className={`${menuActive} flex flex-col items-center gap-4 transition w-full sm:flex-row sm:translate-y-0 sm:justify-end `}
-      >
-        <li>
-          <button className={buttonStyle}>Plants</button>
-        </li>
-        <li>
-          <button className={buttonStyle}>About</button>
-        </li>
-        <li>
-          <button className={`${rainbowText} sm:text-3xl drop-shadow-md`}>Subscribe</button>
-        </li>
+    <nav className='w-full absolute top-0 py-2 px-3'>
+      <span className={`${rainbowText}`}>SRNT</span>
+      <ul className={`${menuActive ? 'translate-y-0' : '-translate-y-52'} transition bg-matcha-100 w-full absolute left-0 top-0 z-0 flex flex-col items-center gap-4 py-4`}>
+        <li><a href='#' className={buttonStyle}>Plants</a></li>
+        <li><a href='#' className={buttonStyle}>About</a></li>
+        <li><a href='#subscribe' className={rainbowText}>Subscribe</a></li>
       </ul>
-      <button onClick={handleClick} className='absolute right-4 text-3xl text-matcha-100 sm:hidden'>X</button>
+      <button onClick={handleClick} className='absolute right-3 z-1'><img src={menuActive ? menuCloseIcon : menuActiveIcon}/></button>
     </nav>
   );
 }
