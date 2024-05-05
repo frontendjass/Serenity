@@ -18,6 +18,10 @@ export default {
           950: '#181f14',
         },
       },
+      fontFamily: {
+        'raleway': ['Raleway', 'sans-serif'],
+        'roboto': ['Roboto', 'sans-serif'],
+      }
     },
   },
   plugins: [],

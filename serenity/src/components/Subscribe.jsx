@@ -1,8 +1,8 @@
 export default function Subscribe() {
   return (
-    <section className='bg-matcha-100 w-screen h-64 flex flex-col items-center justify-center gap-4'>
-      <h2 className='text-2xl' id="subscribe">Subscribe to our newsletter</h2>
-      <p className='text-center'>
+    <section className='bg-matcha-100 w-screen h-64 flex flex-col items-center justify-center gap-4 px-2'>
+      <h2 className='text-2xl font-raleway font-light' id="subscribe">Subscribe to our newsletter</h2>
+      <p className='text-center font-roboto'>
         Stay up-to-date with the latest articles, tips, and news on medicinal
         plants.
       </p>

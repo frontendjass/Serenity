@@ -7,16 +7,26 @@ export default function Hero() {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
     };
+    const gradientOverlayStyle = {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        background: 'linear-gradient(rgba(24, 31, 20, 0.2), rgba(24, 31, 20, 0.1))',
+        zIndex: 0,
+    };
 
-    const rainbowText = "text-6xl font-bold bg-gradient-to-r from-matcha-300 via-matcha-100 to-matcha-300 bg-clip-text text-transparent";
+    const rainbowText = "text-6xl font-bold bg-gradient-to-r from-matcha-300 via-matcha-100 to-matcha-300 bg-clip-text text-transparent font-raleway font-light";
 
     return (
-        <section className="p-4 h-screen">
-            <div className='flex flex-col justify-center items-center w-full h-full relative' style={heroStyle}>
+        <section className="p-4 h-screen" id='home'>
+            <div className='flex flex-col justify-center items-center w-full h-full relative z-0' style={heroStyle}>
+            <div style={gradientOverlayStyle}></div>
             <Navbar/>
 
-                <h1><strong className={`${rainbowText} sm:text-7xl drop-shadow-md`}>Serenity</strong></h1>
-                <h2 className='text-xl text-matcha-50 drop-shadow-md'>Medicinal plants</h2>
+                <h1><strong className={`${rainbowText} sm:text-9xl drop-shadow-md`}>Serenity</strong></h1>
+                <h2 className='text-xl text-matcha-50 drop-shadow-md font-roboto'>Medicinal plants</h2>
             </div>
             
         </section>
