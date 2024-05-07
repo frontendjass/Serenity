@@ -11,16 +11,17 @@ export default function Navbar() {
   }
 
   const rainbowText =
-    'text-4xl font-bold bg-gradient-to-r from-matcha-600 via-matcha-500 to-matcha-600 bg-clip-text text-transparent uppercase drop-shadow font-raleway hover:cursor-pointer';
-  const linkStyle = 'text-matcha-600 md:text-matcha-50 text-xl uppercase drop-shadow-2xl origin-center hover:scale-75 font-raleway hover:cursor-pointer';
+    'text-4xl font-bold bg-gradient-to-r from-matcha-500 via-matcha-400 to-matcha-500 bg-clip-text text-transparent uppercase drop-shadow font-raleway hover:cursor-pointer hover:from-matcha-300 hover:via-matcha-100 hover:to-matcha-300';
+
+  const linkStyle = 'text-matcha-600 sm:text-matcha-50 text-xl uppercase drop-shadow-2xl origin-center hover:scale-75 font-raleway hover:cursor-pointer hover:font-bold';
 
   return (
-    <nav className='w-full absolute top-0 py-2 px-3 z-1'>
+    <nav className='w-full absolute top-0 py-2 px-3 z-1 '>
       <span className={`${rainbowText}`}>SRNT</span>
       <ul
         className={`${
           menuActive ? 'translate-y-0' : '-translate-y-56'
-        } transition bg-matcha-100 w-full absolute left-0 top-0 z-0 flex flex-col items-center gap-4 py-4 sm:translate-y-0 sm:flex-row sm:bg-transparent sm:justify-end sm:pr-5`}
+        } transition bg-matcha-100 w-full absolute left-0 top-0 z-0 flex flex-col items-center gap-4 py-4 sm:translate-y-0 sm:flex-row sm:bg-transparent sm:justify-end sm:pr-5 `}
       >
         <li>
           <Link to="home" spy={true} smooth={true} className={linkStyle} onClick={handleClick}>

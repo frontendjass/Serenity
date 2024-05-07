@@ -44,7 +44,7 @@ export default function Subscribe() {
           required
           className='bg-matcha-100 p-2 border-matcha-50 border-2 sm:w-96 w-full'
         />
-        <button type='submit' className='border px-2 border-matcha-800'>
+        <button type='submit' className='border text-matcha-800 bg-matcha-50 px-4 border-matcha-500 uppercase hover:bg-matcha-300 hover:text-matcha-50'>
           Submit
         </button>
       </form>

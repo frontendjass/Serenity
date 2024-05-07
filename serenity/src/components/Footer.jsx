@@ -6,7 +6,7 @@ import twitterIcon from '../assets/icon-twitter.svg';
 import facebookIcon from '../assets/icon-facebook.svg';
 
 export default function Footer() {
-    const linkStyle = 'text-matcha-900 text-l uppercase font-raleway';
+    const linkStyle = 'text-matcha-900 text-l uppercase font-raleway hover:cursor-pointer hover:font-bold';
 
     return (
         <footer className=" bg-matcha-50 flex flex-col-reverse justify-center items-center gap-4 h-36 py-8 px-10 sm:flex-row sm:justify-between">

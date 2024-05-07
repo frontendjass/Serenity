@@ -13,7 +13,7 @@ export default function Hero() {
         left: 0,
         width: '100%',
         height: '100%',
-        background: 'linear-gradient(rgba(24, 31, 20, 0.3), rgba(24, 31, 20, 0.1))',
+        background: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))',
         zIndex: 0,
     };
 
