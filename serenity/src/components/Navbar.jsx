@@ -11,7 +11,7 @@ export default function Navbar() {
   }
 
   const rainbowText =
-    'text-4xl font-bold bg-gradient-to-r from-matcha-600 via-matcha-500 to-matcha-600 bg-clip-text text-transparent uppercase drop-shadow font-raleway';
+    'text-4xl font-bold bg-gradient-to-r from-matcha-600 via-matcha-500 to-matcha-600 bg-clip-text text-transparent uppercase drop-shadow font-raleway hover:cursor-pointer';
   const linkStyle = 'text-matcha-600 md:text-matcha-50 text-xl uppercase drop-shadow-2xl origin-center hover:scale-75 font-raleway hover:cursor-pointer';
 
   return (
