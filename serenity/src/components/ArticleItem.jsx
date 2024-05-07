@@ -2,7 +2,7 @@ import lavenderImage from '../assets/lavender.jpg';
 
 export default function ArticleItem({ data }) {
   return (
-    <button className='flex flex-col items-center shadow-2xl h-[450px] w-72'>
+    <button className='flex flex-col items-center shadow-2xl h-[450px] w-72 bg-matcha-50'>
       <img
         src={data.img}
         alt='A lavender plant.'

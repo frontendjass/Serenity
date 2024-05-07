@@ -1,0 +1,19 @@
+/* scrollbar.css */
+::-webkit-scrollbar {
+    width: 10px; /* width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f0f3eb; /* light green color for scrollbar track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #8ba576; /* darker green color for scrollbar thumb */
+    border-radius: 1px; /* border radius of the thumb */
+
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6c9042; /* darker green color for thumb on hover */
+  }
+  
